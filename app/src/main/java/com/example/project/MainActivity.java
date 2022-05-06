@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btn;
+    private Button btn1, btn2;
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor sharedPrefEdit;
 
@@ -26,12 +26,12 @@ public class MainActivity extends AppCompatActivity {
         sharedPreferences = getPreferences(MODE_PRIVATE);
         sharedPrefEdit = sharedPreferences.edit();
 
-        btn = findViewById(R.id.secondActivity_btn);
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn1 = findViewById(R.id.secondActivity_btn);
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                intent.putExtra("passedString", "Kabood");
+
 
             }
         });
