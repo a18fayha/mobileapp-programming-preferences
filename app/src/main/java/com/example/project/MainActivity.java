@@ -57,10 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 efternamnStr = efternamn.getText().toString();
                 sharedPrefEdit.putString("förnamn", förnamnStr);
                 sharedPrefEdit.putString("efternamn", efternamnStr);
-
                 sharedPrefEdit.apply();
-
-
 
             }
         });
